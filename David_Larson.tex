@@ -1,11 +1,4 @@
-\documentclass[11pt]{article}
-
-% The automated optical recognition software used to digitize resume
-% information works best with fonts that do not have serifs. This
-% command uses a sans serif font throughout. Uncomment both lines (or at
-% least the second) to restore a Roman font (i.e., a font with serifs).
-%\usepackage{times}
-%\renewcommand{\familydefault}{\sfdefault}
+\documentclass[10pt]{article}
 
 % This is a helpful package that puts math inside length specifications
 \usepackage{calc}
@@ -41,7 +34,7 @@
 \usepackage[paper=letterpaper,
             %includefoot, % Uncomment to put page number above margin
             marginparwidth=1.2in,     % Length of section titles
-            marginparsep=.05in,       % Space between titles and text
+            marginparsep=0.05in,      % Space between titles and text
             margin=1in,               % 1 inch margins
             includemp]{geometry}
 
@@ -125,7 +118,8 @@
 
 % Finally, give us PDF bookmarks
 \usepackage{color,hyperref}
-\definecolor{darkblue}{rgb}{0.0,0.1,0.5}
+%\definecolor{darkblue}{cmyk}{0.995,0.560,0.000,0.243}
+\definecolor{darkblue}{RGB}{11,72,117}
 \hypersetup{colorlinks,breaklinks,
             linkcolor=darkblue,urlcolor=darkblue,
             anchorcolor=darkblue,citecolor=darkblue}
@@ -298,7 +292,8 @@ Ph.D. Student \\
 \href{http://www.ucsd.edu/}{University of California, San Diego} \\
 9500 Gilman Drive \\
 La Jolla, CA 92093-0411 \\
-\email{dplarson@ucsd.edu} 
+\email{dplarson@ucsd.edu} \\
+\url{http://ieng6.ucsd.edu/\textasciitilde dplarson/}
 
 
 
@@ -306,7 +301,7 @@ La Jolla, CA 92093-0411 \\
 % RESEARCH INTERESTS 
 %------------------------------------------------------------------------------
 \section{Research Interests}
-Evolutionary Methods, Genetic Algorithms, Shape Optimization, Bio-inspiration, Fluid Mechanics of biological locomotion, Fractional and Variable Order Methods
+Evolutionary Methods, Shape Optimization, Bio-inspiration, Non-Integer Order Methods, Machine Learning, Solar Forecasting
 
 
 
@@ -320,11 +315,9 @@ La Jolla, CA
 \begin{outerlist}
 \item[] Ph.D.,
 	\href{http://mae.ucsd.edu/}{Mechanical and Aerospace Engineering},
-	June 2012--present
+	Sep 2012--present
 	\begin{innerlist}
-        \item Adviser:
-	\href{http://www.jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=324}
-                   {Professor Carlos F.M.~Coimbra}
+        \item Advisor:\href{http://www.jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=324}{Professor Carlos F.M.~Coimbra}
         \item Area of Study: Fluid Mechanics 
 	\end{innerlist}
 \end{outerlist}
@@ -336,9 +329,9 @@ Merced, CA
 \begin{outerlist}
 \item[] B.S.,
 	\href{http:/eng.ucmerced.edu/}{Mechanical Engineering}, 
-	August 2008--May 2012
+	Aug 2008--May 2012
 	\begin{innerlist}
-	\item Fluid Mechanics specialization
+	    \item Fluid Mechanics specialization
 	\end{innerlist}
 \end{outerlist}
 
@@ -354,7 +347,7 @@ Lab Manager \hfill 2012--present
     \item Lab: \href{http://coimbra.ucsd.edu/}{Coimbra Group} 
     \item Location: University of California, San Diego
     \item Oversee research lab safety
-    \item Manage group information infrastructure
+    \item Manage group computer network and servers
 \end{innerlist}
 
 
@@ -365,7 +358,7 @@ Graduate Student Researcher \hfill 2012--present
 \begin{innerlist}
     \item Lab: \href{http://coimbra.ucsd.edu/}{Coimbra Group} 
     \item Location: University of California, San Diego
-    \item Investigating the application of Fractional and Variable Order Methods to Nonlinear Chaos Dynamics
+    \item Investigating the application of Non-Integer Order Methods to Nonlinear Chaos Dynamics
 \end{innerlist}
 
 
@@ -413,7 +406,7 @@ Undergraduate Student Researcher \hfill 2009--2012
 \begin{innerlist}
     \item Lab: \href{http://coimbra.ucsd.edu/}{Coimbra Group}
     \item Location: University of California, Merced
-    \item Deployed high-fidelity irradiance and weather instrumentation across California and Washington
+    \item Deployed high-fidelity irradiance and weather instrumentation at sites across CA and WA state
     \item Tested long term degradation of anti-dust glass coating for solar panels
     \item Analyzed animal flight data to determine underlying aerodynamic trends
 \end{innerlist}
@@ -484,7 +477,7 @@ Lab assistant \hfill 2007--2008
 
 Computer Programming:
 \begin{innerlist}
-	\item \Matlab, Mathematica, Python, PHP, MySQL, Unix shell scripting, Ruby
+	\item \Matlab, Mathematica, Python, PHP, MySQL, Unix shell scripting
 \end{innerlist}
 
 
@@ -503,15 +496,6 @@ Version Control and Software Configuration Management:
 Computer Aided Design (CAD):
 \begin{innerlist}
 	\item Pro/ENGINEER, Autodesk Inventor
-\end{innerlist}
-
-
-\blankline
-
-
-Multi-Physics Simulations:
-\begin{innerlist}
-	\item Pro/ENGINEER Mechanica, COMSOL, Autodesk Multiphysics Simulation
 \end{innerlist}
 
 
@@ -544,15 +528,6 @@ Irradiance and Weather Instrumentation:
 Particle Image Velocimetry:
 \begin{innerlist}
     \item \href{http://www.lavision.de/en/products/davis.php}{LaVision DaVis} image software, high speed cameras, q-switched lasers, wind tunnels
-\end{innerlist}
-
-
-\blankline
-
-
-Information/Internet Technology:
-\begin{innerlist}
-    \item Networking (UDP, TCP), Services (Apache, SQL, POP, IMAP, SMTP) 
 \end{innerlist}
 
 
