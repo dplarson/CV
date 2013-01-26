@@ -6,30 +6,6 @@
 % Layout: Puts the section titles on left side of page
 \reversemarginpar
 
-%
-%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
-%
-% The next \usepackage line changes the layout for CV style section
-% headings as marginal notes. It also sets up the paper size as either
-% letter or A4. By default, letter was used. If A4 paper is desired,
-% comment out the letterpaper lines and uncomment the a4paper lines.
-%
-% As you can see, the margin widths and section title widths can be
-% easily adjusted.
-%
-% ALSO: Notice that the includefoot option can be commented OUT in order
-% to put the PAGE NUMBER *IN* the bottom margin. This will make the
-% effective text area larger.
-%
-% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
-% see the note about the +LP and -LP lines below. Comment out the +LP
-% and uncomment the -LP.
-%
-% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
-% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
-% below.
-%
-
 %% Use these lines for letter-sized paper
 \usepackage[paper=letterpaper,
             %includefoot, % Uncomment to put page number above margin
@@ -223,7 +199,7 @@
 %       \item ...    % (or \item[] for no bullet)
 %   \end{innerlist}
 \newlist{innerlist}{itemize}{3}
-    \setlist[innerlist]{label=\enskip\textbullet,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt}
+    \setlist[innerlist]{label=\enskip -,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt}
     \fixinnerlist{innerlist}
 
 % An environment IDENTICAL to innerlist that has better pre-list spacing
@@ -262,22 +238,13 @@
 % Same as above, but pretty-prints ADDRESS in teletype fixed-width font
 %\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
 
-%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-%    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-%    \TeX}}
-\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-    \TeX}}
-\providecommand\Matlab{\textsc{Matlab}}
-
-% Custom hyphenation rules for words that LaTeX has trouble with
-\hyphenation{bio-mim-ic-ry bio-in-spi-ra-tion re-us-a-ble pro-vid-er}
 
 %%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+
 \begin{document}
-\makeheading{David Philip Larson}
+\makeheading[]{David Philip Larson}
 
 
 %------------------------------------------------------------------------------
@@ -304,8 +271,10 @@ Solar Forecasting, Non--Integer Order Methods, Nonlinear Chaos, Machine Learning
 \section{Education}
 
 \href{http://mae.ucsd.edu/}{\textbf{University of California, San Diego} } \\
-\textit{Ph.D. in Mechanical Engineering} \hfill 2012--present \\
-Advisor: \href{http://www.jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=324}{Carlos F.M. Coimbra}
+\textit{Ph.D. in Mechanical Engineering} \hfill 2012--present
+\begin{innerlist}
+    \item Advisor: \href{http://www.jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=324}{Carlos F.M. Coimbra}
+\end{innerlist}
 
 \blankline
 
@@ -323,9 +292,9 @@ U.S.
 %------------------------------------------------------------------------------
 % RESEARCH EXPERIENCE 
 %------------------------------------------------------------------------------
-\section{Academic Research Experience}
+\section{Research Experience}
 
-Lab Manager \hfill 2012--present
+\textbf{Lab Manager} \hfill 2012--present
 \begin{innerlist}
     \item Lab: \href{http://coimbra.ucsd.edu/}{Coimbra Group} 
     \item Location: University of California, San Diego
@@ -337,18 +306,18 @@ Lab Manager \hfill 2012--present
 \blankline
 
 
-Graduate Student Researcher \hfill 2012--present
+\textbf{Graduate Student Researcher} \hfill 2012--present
 \begin{innerlist}
-    \item Lab: \href{http://coimbra.ucsd.edu/}{Coimbra Group} 
-    \item Location: University of California, San Diego
-    \item Investigating the application of Non-Integer Order Methods to Nonlinear Chaos Dynamics
+    \item[-] Lab: \href{http://coimbra.ucsd.edu/}{Coimbra Group} 
+    \item[-] Location: University of California, San Diego
+    \item[-] Investigating the application of Non-Integer Order Methods to Nonlinear Chaos Dynamics
 \end{innerlist}
 
 
 \blankline
 
 
-Visiting UC LEADS Scholar \hfill Summer 2011
+\textbf{Visiting UC LEADS Scholar} \hfill Summer 2011
 \begin{innerlist}
     \item Lab: \href{http://ib.berkeley.edu/labs/dudley}{Animal Flight Lab}
     \item Location: University of California, Berkeley
@@ -361,7 +330,7 @@ Visiting UC LEADS Scholar \hfill Summer 2011
 \blankline
 
 
-\href{http://graduatedivision.ucmerced.edu/grad-prep-programs/uc-leads}{UC LEADS Scholar} \hfill Summer 2010
+\textbf{\href{http://graduatedivision.ucmerced.edu/grad-prep-programs/uc-leads}{UC LEADS Scholar}} \hfill Summer 2010
 \begin{innerlist}
     \item Lab: \href{http://coimbra.ucsd.edu/}{Coimbra Group}
     \item Location: University of California, Merced
@@ -372,7 +341,7 @@ Visiting UC LEADS Scholar \hfill Summer 2011
 \blankline
 
 
-Lab Manager \hfill 2010--2012
+\textbf{Lab Manager} \hfill 2010--2012
 \begin{innerlist}
     \item Lab: \href{http://coimbra.ucsd.edu/}{Coimbra Group}
     \item Location: University of California, Merced
@@ -385,7 +354,7 @@ Lab Manager \hfill 2010--2012
 \blankline
 
 
-Undergraduate Student Researcher \hfill 2009--2012
+\textbf{Undergraduate Student Researcher} \hfill 2009--2012
 \begin{innerlist}
     \item Lab: \href{http://coimbra.ucsd.edu/}{Coimbra Group}
     \item Location: University of California, Merced
@@ -398,7 +367,7 @@ Undergraduate Student Researcher \hfill 2009--2012
 \blankline
 
 
-Undergraduate Student Researcher \hfill 2008--2009 
+\textbf{Undergraduate Student Researcher} \hfill 2008--2009 
 \begin{innerlist}
     \item \href{http://faculty.ucmerced.edu/lhirst/}{Hirst Group}
     \item Location: University of California, Merced 
@@ -409,7 +378,7 @@ Undergraduate Student Researcher \hfill 2008--2009
 \blankline
 
 
-Lab assistant \hfill 2007--2008
+\textbf{Lab Assistant} \hfill 2007--2008
 \begin{innerlist}
     \item Lab: \href{http://mems.soe.ucsc.edu/}{MEMS Lab} 
     \item Location: University of California, Santa Cruz
@@ -418,57 +387,35 @@ Lab assistant \hfill 2007--2008
 \end{innerlist}
 
 
-
 %------------------------------------------------------------------------------
 % PROFESSIONAL MEMBERSHIPS 
 %------------------------------------------------------------------------------
 \section{Professional Memberships}
 
-\href{http://www.asme.org/}{American Society of Mechanical Engineers} \\
+\textbf{\href{http://www.asme.org/}{American Society of Mechanical Engineers}} \\
 Student Member \hfill 2009--present
 
 \blankline
 
-\href{http://www.eswusa.org/}{Engineers for a Sustainable World} \\
+\textbf{\href{http://www.eswusa.org/}{Engineers for a Sustainable World}} \\
 Student Member \hfill 2011--present
 
 
-
 %------------------------------------------------------------------------------
-% SERVICE 
-%------------------------------------------------------------------------------
-%\section{Service}
-%Recent contributor to several open-source software projects, including:
-%\begin{innerlist}
-%    \item \href{http://vim-latex.sourceforge.net/}{Vim-LaTeX} suite
-%    \item \href{http://vimperator.org}{Vimperator} and
-%        \href{http://dactyl.sourceforge.net/pentadactyl/index}{Pentadactyl}
-%        Firefox extensions
-%    \item \href{http://git-scm.com}{Git} distributed version control
-%        system
-%    \item \href{http://www.selenic.com/mercurial/}{Mercurial} distributed version control
-%        system
-%    \item Personal projects archived at
-%        \url{http://hg.tedpavlic.com/}
-%\end{innerlist}
-
-
-
-%------------------------------------------------------------------------------
-% HARDWARE AND SOFTWARE SKILLS 
+% TECHNICAL SKILLS
 %------------------------------------------------------------------------------
 \section{Technical Skillsets}
 
-Programming:
+\textbf{Programming}
 \begin{innerlist}
-	\item \Matlab, Python, Mathematica, PHP, MySQL, Unix shell scripting
+	\item Matlab, Python, Mathematica, PHP, MySQL, Unix shell scripting
 \end{innerlist}
 
 
 \blankline
 
 
-Version Control:
+\textbf{Version Control}
 \begin{innerlist}
     \item \href{http://git-scm.com}{Git}
     \item \href{http://gitlab.org}{Gitlab}
@@ -478,8 +425,7 @@ Version Control:
 \blankline
 
 
-
-Rapid Prototyping:
+\textbf{Rapid Prototyping}
 \begin{innerlist}
     \item CAD/CAE: Pro/ENGINEER, Autodesk Inventor
     \item Machining: mill, lathe, and drill press machining
@@ -490,7 +436,7 @@ Rapid Prototyping:
 \blankline
 
 
-Irradiance and Weather Instrumentation:
+\textbf{Irradiance and Weather Instrumentation}
 \begin{innerlist}
 	\item \href{http://www.yesinc.com/}{Yankee Environmental Systems} (YES) Multi-Filter Rotating Shadowband (MFR-7) and Total Sky Image (TSI-880)
 	\item \href{http://www.eppleylab.com/}{Eppley Laboratory} Precision Spectral Pyranometer (PSP), Normal Incidence Pyrheliometer (NIP), Precision Infrared Radiometer (PIR), Total Ultraviolet Radiometer (TUVR), and Automatic Solar Tracker (SMT-3)
@@ -503,7 +449,7 @@ Irradiance and Weather Instrumentation:
 \blankline
 
 
-Particle Image Velocimetry:
+\textbf{Particle Image Velocimetry}
 \begin{innerlist}
     \item \href{http://www.lavision.de/en/products/davis.php}{LaVision DaVis} image software, high speed cameras, q-switched lasers, wind tunnels
 \end{innerlist}
@@ -512,7 +458,7 @@ Particle Image Velocimetry:
 \blankline
 
 
-Productivity Applications:
+\textbf{Productivity Applications}
 \begin{innerlist}
     \item TeX (LaTeX, Bibtex), Vim, most common productivity packages (for Mac OS X, Windows, and Linux platforms)
 \end{innerlist}
@@ -521,30 +467,10 @@ Productivity Applications:
 \blankline
 
 
-Operating Systems:
+\textbf{Operating Systems}
 \begin{innerlist}
     \item Mac OS X, Linux, Windows
 \end{innerlist}
-
-
-
-
-%------------------------------------------------------------------------------
-% EXPERTISE
-%------------------------------------------------------------------------------
-%\section{Expertise}
-
-%Mathematics:
-%\begin{innerlist}
-%    \item Fractional and Variable Order Calculus, Numerical Methods
-%\end{innerlist}
-
-%\halfblankline
-
-%Fluid Mechanics:
-%\begin{innerlist}
-%	\item Biological Locomotion, Particle Image Velocimetry (PIV)
-%\end{innerlist}
 
 
 
@@ -553,7 +479,7 @@ Operating Systems:
 %------------------------------------------------------------------------------
 \section{Awards}
 
-\href{https://eng.ucmerced.edu/innovatetogrow}{Innovate to Grow Competition} \hfill May 2012
+\textbf{\href{https://eng.ucmerced.edu/innovatetogrow}{Innovate to Grow Competition}} \hfill May 2012
 \begin{innerlist}
     \item 1st Place (tied) People's Choice
     \item Entry Title: Harvesting Energy from Irrigation Canals
@@ -564,7 +490,7 @@ Operating Systems:
 \blankline
 
 
-\href{http://www.eswusa.org/sunedisonautodesk-projects}{Distributed Power Generation Project} \hfill 2011
+\textbf{\href{http://www.eswusa.org/sunedisonautodesk-projects}{Distributed Power Generation Project}} \hfill 2011
 \begin{innerlist}
     \item Sponsors: ESW, SunEdison/MEMC, Autodesk
     \item Entry Title: Solar Powered Cargo Ship
@@ -575,7 +501,7 @@ Operating Systems:
 \blankline
 
 
-\href{http://citris-uc.org/news/2010/04/22/citris_big_ideas_winners_2010}{CITRIS Big Idea Competition} \hfill Apr 2010
+\textbf{\href{http://citris-uc.org/news/2010/04/22/citris_big_ideas_winners_2010}{CITRIS Big Idea Competition}} \hfill Apr 2010
 \begin{innerlist}
     \item Honorable Mention 
     \item Entry Title: Distributed Computing for Open Access Solar Forecasting
@@ -587,7 +513,7 @@ Operating Systems:
 \blankline
 
 
-\href{http://events.asme.org/SPDC/}{ASME Old Guard Oral Presentation Competition} \hfill Apr 2010
+\textbf{\href{http://events.asme.org/SPDC/}{ASME Old Guard Oral Presentation Competition}} \hfill Apr 2010
 \begin{innerlist}
     \item 5th Place, District D 
     \item Entry Title: Distributed Computing for Open Access Solar Forecasting
@@ -597,7 +523,7 @@ Operating Systems:
 \blankline
 
 
-\href{http://www.ucmerced.edu}{University of California, Merced}
+\textbf{\href{http://www.ucmerced.edu}{University of California, Merced}}
 \begin{innerlist}
     \item Dean's Undergraduate Research Scholar, 2008--2009
     \item 2nd Place Service Learning Final Presentation, Dec 2009
